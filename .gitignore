@@ -1,4 +1,4 @@
-.DS__Store
+.DS_Store
 .idea/
 .idea/*
 .vscode
@@ -7,5 +7,5 @@ npm-debug.*
 
 dist/
 node_modules/
-pacage-lock.json
+package-lock.json
 app/css/*
