@@ -464,6 +464,11 @@
     text-align: center;
     padding: 105px 0 120px;
 
+    &__text {
+        max-width: 573px;
+
+    }
+
     &__items {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -477,6 +482,7 @@
         padding: 14px 27px;
         margin-top: 55px;
     }
+
 }
 
 .product-item {
@@ -556,7 +562,7 @@
 
     &__title {
         color: $title;
-        padding: 15px 0 20px;
+        padding: 15px 0 8px;
     }
 
     &__price {
@@ -590,6 +596,84 @@
 .star {
     margin: 0 auto;
 }
+
+.promo {
+    background-image: url(../images/promo-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0 160px;
+    text-align: center;
+
+    &__inner {
+        max-width: 570px;
+        width: 100%;
+        margin-left: auto;
+    }
+
+    &__subtitle {
+        color: $accent;
+        text-transform: uppercase;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    &__clock {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 55px;
+    }
+
+    &__clock-item {
+        background-color: #fff;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        box-shadow: 0px 10px 40px 0px rgba(187, 187, 187, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        span {
+            font-size: 48px;
+            margin-bottom: 7px;
+            margin-top: 17px;
+            @extend %roboto-700;
+            margin-bottom: 7px;
+            color: $title;
+        }
+    }
+
+    &__link {
+        text-transform: uppercase;
+        color: $title;
+        display: inline-block;
+        border: 1px solid $accent;
+        padding: 14px 27px;
+        margin-top: 55px;
+    }
+}
+
+
+
+.partners {
+    padding: 100px 0;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    &__item {
+        margin: 10px 40px;
+    }
+}
+
+
 
 
 
